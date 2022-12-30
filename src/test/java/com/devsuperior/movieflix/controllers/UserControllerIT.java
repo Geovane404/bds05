@@ -42,7 +42,7 @@ public class UserControllerIT {
 		memberPassword = "123456";
 	}
 	
-	@Test
+	@Test  
 	public void getProfileShouldReturnSelfWhenVisitorLogged() throws Exception {
 		
 		String accessToken = tokenUtil.obtainAccessToken(mockMvc, visitorUsername, visitorPassword);
